@@ -1,46 +1,42 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="ロシア語初級小テストの勉強"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+[eval exp="N = 2"]
+[cm]
+問題がランダムに出題されます。問題数:[emb exp="N"][r]
+クリックするとスタート[l][r]
 
-メロスは激怒した。[l][r]
+[iscript]
+qnum = Math.floor(Math.random() * N + 1);
+[endscript]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+[emb exp="qnum"][l]
 
-(中略)[l][r]
+[jump target=* &qnum]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+*1
+[cm]
+1.[r]
+適切な形にしなさい。[r]
+(Мой) имя Михаил.[r][l]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+答え:Моё[r]
+[link target=*start]はじめに戻る[endlink][r]
+[link target=*q3]次の問題[endlink][r]
 [s]
 
-*tag_sleep
+*2
+2.[r]
+適切な形にしなさい。[r]
+Это (их) книга.
 
-[cm]
+答え:их
+[link target=*start]はじめに戻る[endlink][r]
+[link target=*q3]次の問題[endlink][r]
+[s]
 
-[bg storage=sleep.jpg time=500]
-
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
-
-【 BAD END 】[l][cm]
-
-[jump target=*start]
-
-*tag_run
-
-[bg storage=run.jpg time=500]
-
-[cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
-
-【 GOOD END 】[l][cm]
-
-[jump target=*start]
+*q3
